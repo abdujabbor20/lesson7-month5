@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ретро Электрика</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/src/style.css/style.css">
+</head>
+<body class="font-sans text-gray-800 leading-normal bg-white mr-[15px]">
+    <header class="bg-[#F8F8F8]">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center mb-4">
+                <div class="logo ml-[70px]">
+                    <img src="/src/images/logo.svg" alt="Фабрика Декора" class="h-[60px]">
+                </div>
+                
+                    <a href="tel:+79267803663" class="text-gray-800 font-bold text-[18px] mt-[-10px] ml-[-38px]">+7 926 780 3663</a>
+                    <a href="#" class="absolute ml-[343px] mt-[30px] text-[13px] text-amber-500 underline" id="callbackBtn">Обратный звонок</a>                
+                <form class="relative w-64 mr-[100px] mt-[-7px]">
+                    <p class="absolute mt-[27px] ml-[-26px] text-gray-400">Поиск</p>
+                    <input type="text" class="border border-gray-300 ml-[-50px] rounded-full px-[50px] py-2 bg-gray-50 mt-[20px]">
+                    <img class="absolute ml-[200px] mt-[-28px]" src="src/images/Vector.svg" alt="search">
+                </form>
+                
+                <div class="flex items-center gap  mr-[154px]">
+                    <a href="#" class="absolute ml-[-180px] mt-[15px]" id="cartBtn"><img src="src/images/Vector (2).svg" alt="lo"></a>
+                    <div class="absolute bg-amber-500 ml-[-163px] text-white text-[9px] font-bold w-3 h-3 flex items-center justify-center rounded-full">
+                        7
+                    </div>     
+                </div>
+                    <a class="absolute ml-[970px] mt-[15px]" href="#" id="wishlistBtn"><img src="src/images/Vector (1).svg" alt="ve"></a>
+                    <div class="absolute bg-amber-500 ml-[980px] text-white text-[8px] font-bold w-3 h-3 flex items-center justify-center rounded-full">
+                        10
+                    </div>
+                    <p class="absolute ml-[1000px] mt-[15px] text-[14px] text-[#6B422B]">15 354 руб.</p>
+                    <a class="absolute ml-[1113px] mt-[15px]" href="#" id="profileBtn"><img src="src/images/profile.svg" alt="prof"></a>
+            </div>
+        </div>
+    </header>
+            <nav class="flex gap-[144px] ml-[90px]">
+                <a href="#" class="py-4 text-amber-500 font-medium" id="catalogBtn">Каталог</a>
+                <img class="absolute ml-[70px] mt-[27px]" src="src/images/Vector (3).svg" alt="img">
+                <a href="#" class="py-4 text-[#171717] font-bold">Главная</a>
+                <a href="#" class="py-4 text-[#171717] font-bold">О нас</a>
+                <a href="#" class="py-4 text-[#171717] font-bold">Акции</a>
+                <a href="#" class="py-4 text-[#171717] font-bold">Новости</a>
+                <a href="#" class="py-4 text-[#171717] font-bold">Контакты</a>
+            </nav>
+    <div class="carousel-container">
+        <div id="carousel" class="carousel">
+            <div class="carousel-slide">
+                <section class="relative bg-amber-600 text-white">
+                    <div class="bg-[url('/src/images/Mask%20Group.png')] bg-cover bg-center h-[400px] bg-[radial-gradient(circle,_#D3B482,_#AC9370)]"></div>
+                </section>
+                <h2 class="ml-[90px] absolute mt-[-380px] text-[40px] text-white font-sans">Ищете где купить <br> механизмы Salvador?</h2>
+                <p class="absolute text-white mt-[-230px] ml-[90px]">Осуществляя ее заказ на общую сумму от 100 000 рублей, под все заказанные <br> выключатели и розетки для открытой проводки в подарок вы получаете рамки <br> натурального бука нашего собственного производства.</p>
+                <button class="absolute border-amber-600 border rounded-full p-[8px] mt-[-100px] ml-[90px] text-white bg-amber-500">Подробнее</button>
+            </div>
+            
+            <div class="carousel-slide">
+                <section class="relative bg-amber-600 text-white">
+                    <div class="bg-[url('/placeholder.svg?height=400&width=1200')] bg-cover bg-center h-[400px] bg-[radial-gradient(circle,_#D3B482,_#AC9370)]"></div>
+                </section>
+                <h2 class="ml-[90px] absolute mt-[-380px] text-[40px] text-white font-sans">Качественные механизмы <br> для вашего дома</h2>
+                <p class="absolute text-white mt-[-230px] ml-[90px]">Мы предлагаем широкий ассортимент высококачественных механизмов Salvador <br> для электропроводки. Наши продукты отличаются надежностью и долговечностью, <br> что делает их идеальным выбором для вашего дома.</p>
+                <button class="absolute border-amber-600 border rounded-full p-[8px] mt-[-100px] ml-[90px] text-white bg-amber-500">Узнать больше</button>
+            </div>
+            
+            <div class="carousel-slide">
+                <section class="relative bg-amber-600 text-white">
+                    <div class="bg-[url('/placeholder.svg?height=400&width=1200')] bg-cover bg-center h-[400px] bg-[radial-gradient(circle,_#D3B482,_#AC9370)]"></div>
+                </section>
+                <h2 class="ml-[90px] absolute mt-[-380px] text-[40px] text-white font-sans">Специальные предложения <br> для оптовых клиентов</h2>
+                <p class="absolute text-white mt-[-230px] ml-[90px]">Для наших оптовых клиентов мы предлагаем специальные условия и скидки. <br> Свяжитесь с нашими менеджерами, чтобы узнать больше о возможностях <br> сотрудничества и выгодных предложениях.</p>
+                <button class="absolute border-amber-600 border rounded-full p-[8px] mt-[-100px] ml-[90px] text-white bg-amber-500">Связаться с нами</button>
+            </div>
+        </div>
+        
+        <button id="prevBtn" class="absolute left-5 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white w-12 h-12 rounded-full flex items-center justify-center z-10">
+            &#10094;
+        </button>
+        <button id="nextBtn" class="absolute right-5 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white w-12 h-12 rounded-full flex items-center justify-center z-10">
+            &#10095;
+        </button>
+        
+        <div class="flex justify-center space-x-2 my-4 mt-[-40px] ml-[96px] absolute">
+            <button data-index="0" class="w-3 h-3 rounded-full bg-white indicator"></button>
+            <button data-index="1" class="w-3 h-3 rounded-full bg-white/50 indicator"></button>
+            <button data-index="2" class="w-3 h-3 rounded-full bg-white/50 indicator"></button>
+        </div>
+    </div>
+    <section class="py-8 mr-[65px]">
+        <div class="container mx-auto px-4 ml-[80px]">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4 mb-4">
+                <div class="bg-gray-100 w-[240px] h-[150px] text-center hover:shadow-md transition duration-300">
+                    <img src="/src/images/IMGP7632-copy-500x500.svg" alt="Розетки" class="absolute h-[150px] ml-[0px] mt-[0px] mx-auto mb-4">
+                    <h3 class="font-bold mt-[60px] ml-[50px] text-[18px] uppercase">РОЗЕТКИ</h3>
+                </div>
+                <div class="bg-gray-100 p-5 ml-[40px] w-[240px] text-center hover:shadow-md transition duration-300">
+                    <img src="/src/images/34024а.png" alt="Выключатели" class="absolute h-[150px] ml-[-20px] mt-[-20px] mx-auto mb-4">
+                    <h3 class="font-bold mt-[40px] ml-[60px] text-[18px] uppercase">ВЫКЛЮЧАТЕЛИ</h3>
+                </div>
+                <div class="bg-gray-100 p-5 ml-[80px] w-[240px] text-center hover:shadow-md transition duration-300">
+                    <img src="/src/images/330-СК.png" alt="Коробки распаечные" class="absolute h-[130px] ml-[-20px] mt-[-10px] mx-auto mb-4">
+                    <h3 class="font-bold text-[18px] uppercase mt-[30px] ml-[20px]">КОРОБКИ <br> <span class="ml-[37px]">РАСПАЕЧНЫЕ</span></h3>
+                </div>
+                <div class="bg-gray-100 p-5 ml-[115px] w-[240px]  text-center hover:shadow-md transition duration-300">
+                    <img src="/src/images/IMGP7888-copy-500x500.png" alt="Изоляторы кабельные" class="absolute h-[130px] ml-[-20px] mt-[-10px] mx-auto mb-4">
+                    <h3 class="font-bold text-[18px] mt-[30px] uppercase">ИЗОЛЯТОРЫ КАБЕЛЬНЫЕ</h3>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                <div class="bg-gray-100 p-5 w-[240px] text-center hover:shadow-md transition duration-300">
+                    <img src="/src/images/IMGP2404-copy.png" alt="Рамки" class="absolute h-[120px] ml-[-20px] mt-[0px] mx-auto mb-4">
+                    <h3 class="font-bold mt-[40px] ml-[50px] text-[18px] uppercase">РАМКИ</h3>
+                </div>
+                <div class="bg-gray-100 p-5 ml-[40px] w-[240px] text-center hover:shadow-md transition duration-300">
+                    <img src="/src/images/проводда.png" alt="Провода" class="absolute h-[120px] ml-[-20px] mt-[-7px] mx-auto mb-4">
+                    <h3 class="font-bold mt-[40px] ml-[60px] text-[18px] uppercase">ПРОВОДА</h3>
+                </div>
+                <div class="bg-gray-100 p-5 ml-[80px] w-[240px] text-center hover:shadow-md transition duration-300">
+                    <img src="/src/images/аксессуары.png" alt="Аксессуары" class="absolute h-[80px] ml-[-20px] mt-[-px] mx-auto mb-4">
+                    <h3 class="font-bold mt-[40px] ml-[60px] text-[18px] uppercase">АКСЕССУАРЫ</h3>
+                </div>
+                <div class="bg-gray-100 p-5 ml-[115px] w-[240px] text-center hover:shadow-md transition duration-300">
+                    <img src="/src/images/A60F2C-500x500.png" alt="Лампы" class="w-20 ml-[-20px] h-20 mx-auto mb-4">
+                    <h3 class="font-bold text-sm uppercase">ЛАМПЫ</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-[35px] font-bold mb-12 ml-[78px]">Наши преимущества</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-8 ml-[78px]">
+                <div class="text-center">
+                    <div class="text-amber-500 mb-4 text-4xl"><img src="src/images/11.svg" alt="11"></div>
+                    <h3 class="font-bold text-[22px] ml-[-33px] mt-[10px]">Эксклюзивный <span class="mt-[30px] ml-[-163px] absolute">товар</span></h3>
+                    <p class="text-sm font-sans text-gray-600 mt-[50px] absolute ml-[5px]">Эксклюзивные <span class="absolute mt-[27px] ml-[-95px]">цветовые</span><span class="absolute mt-[27px] ml-[-25px]"> решения</span></p>
+                </div>
+                <div class="text-center">
+                    <div class="text-amber-500 mb-4 text-4xl ml-[5px]"><img src="src/images/12.svg" alt="11"></div>
+                    <h3 class="font-bold absolute text-[22px] ml-[5px]">Наша<span class="mt-[30px] ml-[-58px] absolute">специализация</span></h3>
+                    <p class="text-sm font-sans text-gray-600 mt-[85px] absolute ml-[5px]">Специализируемся на<span class="absolute mt-[27px] ml-[-142px]">ретро </span><span class="absolute mt-[27px] ml-[-99px]"> электрике </span></p>
+                </div>
+                <div class="text-center">
+                    <div class="text-amber-500 mb-4 text-4xl ml-[3px]"><img src="src/images/13.svg" alt="11"></div>
+                    <h3 class="font-bold text-[22px] ml-[-150px] mt-[10px]">Весь<span class="mt-[30px] ml-[-49px] absolute">товар вместе</span></h3>
+                    <p class="text-sm font-sans text-gray-600 mt-[50px] absolute ml-[5px]">Все бренды в одном <span class="absolute mt-[27px] ml-[-132px]">месте</span></p>
+                </div>
+                <div class="text-center ml-[-20px]">
+                    <div class="text-amber-500 mb-4 text-4xl ml-[3px]"><img src="src/images/14.svg" alt="11"></div>
+                    <h3 class="font-bold text-[22px] ml-[-76px] mt-[10px]">Собственный<span class="mt-[30px] ml-[-145px] absolute">склад</span></h3>
+                    <p class="text-sm font-sans text-gray-600 mt-[50px] ml-[3px] absolute">Поэтому доставляем <span class="absolute mt-[27px] ml-[-132px]">товар очень</span><span class="absolute mt-[27px] ml-[-48px]">быстро</span></p>
+                </div>
+                <div class="text-center">
+                    <div class="text-amber-500 mb-4 text-4xl ml-[-20px]"><img src="src/images/15.svg" alt="11"></div>
+                    <h3 class="font-bold text-[22px] ml-[-106px] mt-[10px]">Собственное<span class="mt-[30px] ml-[-137px] absolute">производство</span></h3>
+                    <p class="text-sm font-sans text-gray-600 mt-[50px] absolute ml-[-18px]">Гарантия и качество <span class="absolute mt-[27px] ml-[-131px]">от </span><span class="absolute mt-[27px] ml-[-110px]">производителя</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-8 ml-[78px]">
+                <div class="text-center">
+                    <div class="text-amber-500 mb-4 text-4xl ml-[5px]"><img src="src/images/16.svg" alt="11"></div>
+                    <h3 class="font-bold text-[22px] ml-[-75px] mt-[10px]">Актульные<span class="mt-[30px] ml-[-117px] absolute">акции</span></h3>
+                    <p class="text-sm font-sans text-gray-600 mt-[50px] absolute ml-[5px]">Только новые <span class="absolute mt-[27px] ml-[-88px]">честные</span><span class="absolute mt-[27px] ml-[-30px]"> акции</span></p>
+                </div>
+                <div class="text-center">
+                    <div class="text-amber-500 mb-4 text-4xl"><img src="src/images/17.svg" alt="11"></div>
+                    <h3 class="font-bold text-[22px] ml-[-33px] mt-[-3px]">Эксклюзивный <span class="mt-[27px] ml-[-163px] absolute">товар</span></h3>
+                    <p class="text-sm font-sans text-gray-600 mt-[50px] absolute ml-[5px]">Эксклюзивные <span class="absolute mt-[27px] ml-[-95px]">цветовые</span><span class="absolute mt-[27px] ml-[-25px]"> решения</span></p>
+                </div>
+                <div class="text-center">
+                    <div class="text-amber-500 mb-4 text-4xl"><img src="src/images/18.svg" alt="11"></div>
+                    <h3 class="font-bold text-[22px] ml-[-33px] mt-[-3px]">Эксклюзивный <span class="mt-[30px] ml-[-163px] absolute">товар</span></h3>
+                    <p class="text-sm font-sans text-gray-600 mt-[50px] absolute ml-[5px]">Эксклюзивные <span class="absolute mt-[27px] ml-[-95px]">цветовые</span><span class="absolute mt-[27px] ml-[-25px]"> решения</span></p>
+                </div>
+                <div class="text-center ml-[-15px]">
+                    <div class="text-amber-500 mb-4 text-4xl"><img src="src/images/19.svg" alt="11"></div>
+                    <h3 class="font-bold text-[22px] ml-[-58px] mt-[-6px]">Эксклюзивный <span class="mt-[30px] ml-[-163px] absolute">товар</span></h3>
+                    <p class="text-sm font-sans text-gray-600 mt-[50px] absolute">Эксклюзивные <span class="absolute mt-[27px] ml-[-95px]">цветовые</span><span class="absolute mt-[27px] ml-[-25px]"> решения</span></p>
+                </div>
+                <div class="text-center">
+                    <div class="text-amber-500 mb-4 text-4xl ml-[-18px]"><img src="src/images/20.svg" alt="11"></div>
+                    <h3 class="font-bold text-[22px] ml-[-83px] mt-[-5px]">Эксклюзивный <span class="mt-[30px] ml-[-163px] absolute">товар</span></h3>
+                    <p class="text-sm font-sans text-gray-600 mt-[50px] absolute ml-[-18px]">Эксклюзивные <span class="absolute mt-[27px] ml-[-95px]">цветовые</span><span class="absolute mt-[27px] ml-[-25px]"> решения</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-16 bg-white ml-[80px]">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center z-10 mt-[50px] ml-[-940px]">Коротко о нас</h2>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 md:pr-12 mb-8 md:mb-0">
+                    <p class="text-gray-700 mb-6 text-sm leading-relaxed">
+                        Мы, Фабрика Декора "Керамикъ", уже много лет специализируемся на ретро электрике. 
+                        За годы существования из увлекшихся любителей с горящими глазами наша команда 
+                        превратилась в настоящих с большой буквы Профессионалов своего дела. Но искра 
+                        в наших глазах совершенно не затухла! Сегодня, мы продолжаем работать над тем, 
+                        чтоб вырастить и таких же Профессионалов новых членов нашей команды.
+                    </p>
+                    <a href="#" class="inline-block bg-amber-500 hover:bg-amber-400 text-white font-bold px-6 py-2 rounded-full" id="aboutBtn">Подробнее</a>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="/src/images/image.png" alt="Декоративный светильник" class="w-full h-auto rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 ml-[75px]">Процесс покупки товара</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-8 mb-12 relative">
+                <div class="hidden md:block absolute top-6 left-0 right-0 h-0.5 "></div>
+                
+                <div class="text-center relative z-10">
+                    <div class="text-amber-500 mb-4 text-4xl bg-gray-50 inline-block p-2 rounded-full"><img src="src/images/21.svg" alt="21"></div>
+                    <h3 class="font-bold text-sm">Выберете товар</h3>
+                    <img class="absolute mt-[-40px] ml-[200px]" src="src/images/Vector 2.3.svg" alt="v">
+                </div>
+                <div class="text-center relative z-10">
+                    <div class="text-amber-500 mb-4 text-4xl bg-gray-50 inline-block p-2 rounded-full"><img src="src/images/22.svg" alt="21"></div>
+                    <h3 class="font-bold text-sm">Оформите заказ</h3>
+                    <img class="absolute mt-[-40px] ml-[200px]" src="src/images/Vector 2.3.svg" alt="v">
+                </div>
+                <div class="text-center relative z-10">
+                    <div class="text-amber-500 mb-4 text-4xl bg-gray-50 inline-block p-2 rounded-full"><img src="src/images/23.svg" alt="21"></div>
+                    <h3 class="font-bold text-sm">Наш менеджер свяжется с вами</h3>
+                    <img class="absolute mt-[-60px] ml-[200px]" src="src/images/Vector 2.3.svg" alt="v">
+                </div>
+                <div class="text-center relative z-10">
+                    <div class="text-amber-500 mb-4 text-4xl bg-gray-50 inline-block p-2 rounded-full"><img src="src/images/24.svg" alt="21"></div>
+                    <h3 class="font-bold text-sm">Мы отправим вам товар</h3>
+                    <img class="absolute mt-[-40px] ml-[200px]" src="src/images/Vector 2.3.svg" alt="v">
+                </div>
+                <div class="text-center relative z-10">
+                    <div class="text-amber-500 mb-4 text-4xl bg-gray-50 inline-block p-2 rounded-full"><img src="src/images/25.svg" alt="21"></div>
+                    <h3 class="font-bold text-sm">Вы счастливый клиент</h3>
+                </div>
+            </div>
+            
+            <div class="text-center text-gray-500 my-8 relative">
+                <span class="bg-gray-50 px-4 relative z-10">или</span>
+                <div class="absolute top-1/2 left-1/4 right-1/4 h-px bg-gray-300 -z-0"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+                <div class="hidden md:block absolute top-6"></div>
+                
+                <div class="text-center relative z-10">
+                    <div class="text-amber-500 mb-4 text-4xl bg-gray-50 inline-block p-2 rounded-full"><img src="src/images/26.svg" alt="21"></div>
+                    <h3 class="font-bold text-sm">Вы звоните нам</h3>
+                    <img class="absolute mt-[-40px] ml-[250px]" src="src/images/Vector 2.3.svg" alt="v">
+                </div>
+                <div class="text-center relative z-10">
+                    <div class="text-amber-500 mb-4 text-4xl bg-gray-50 inline-block p-2 rounded-full"><img src="src/images/22.svg" alt="21"></div>
+                    <h3 class="font-bold text-sm">Оформляем заказ</h3>
+                    <img class="absolute mt-[-40px] ml-[250px]" src="src/images/Vector 2.3.svg" alt="v">
+                </div>
+                <div class="text-center relative z-10">
+                    <div class="text-amber-500 mb-4 text-4xl bg-gray-50 inline-block p-2 rounded-full"><img src="src/images/24.svg" alt="21"></div>
+                    <h3 class="font-bold text-sm">Мы отправим вам товар</h3>
+                    <img class="absolute mt-[-40px] ml-[250px]" src="src/images/Vector 2.3.svg" alt="v">
+                </div>
+                <div class="text-center relative z-10">
+                    <div class="text-amber-500 mb-4 text-4xl bg-gray-50 inline-block p-2 rounded-full"><img src="src/images/25.svg" alt="21"></div>
+                    <h3 class="font-bold text-sm">Вы счастливый клиент</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-16 bg-white ml-[75px] mr-[75px]">
+        <div class="container mx-auto px-4">
+            <div class="testimonial-container relative overflow-hidden">
+                <div id="testimonialCarousel" class="testimonial-carousel">
+                    <div class="testimonial-slide">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <div class="bg-white p-6 rounded shadow-sm">
+                                <div class="flex mb-4">
+                                    <div class="w-10 h-10 rounded-full overflow-hidden mr-4">
+                                        <img src="/src/images/1.svg" alt="Андрей Иванов" class="w-full h-full object-cover">
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-gray-800">Андрей Иванов</div>
+                                        <div class="text-gray-500 text-sm">10.07.19</div>
+                                    </div>
+                                </div>
+                                <div class="text-gray-600 text-sm italic">
+                                    <p>Мы, Фабрика Декора "Керамикъ", уже много лет специализируемся на ретро электрике. За годы существования из увлекшихся любителей с горящими глазами наша команда превратилась в настоящих с большой буквы Профессионалов своего дела.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white p-6 rounded shadow-sm">
+                                <div class="flex mb-4">
+                                    <div class="w-10 h-10 rounded-full overflow-hidden mr-4">
+                                        <img src="/src/images/3.svg" alt="Samsung Inc." class="w-full h-full object-cover">
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-gray-800">Samsung Inc.</div>
+                                        <div class="text-gray-500 text-sm">10.07.19</div>
+                                    </div>
+                                </div>
+                                <div class="text-gray-600 text-sm italic">
+                                    <p>Мы, Фабрика Декора "Керамикъ", уже много лет специализируемся на ретро электрике. За годы существования из увлекшихся любителей с горящими глазами наша команда превратилась в настоящих с большой буквы Профессионалов своего дела.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white p-6 rounded shadow-sm">
+                                <div class="flex mb-4">
+                                    <div class="w-10 h-10 rounded-full overflow-hidden mr-4">
+                                        <img src="/src/images/sam.svg" alt="Александр Сергеев" class="w-full h-full object-cover">
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-gray-800">Александр Сергеев</div>
+                                        <div class="text-gray-500 text-sm">10.07.19</div>
+                                    </div>
+                                </div>
+                                <div class="text-gray-600 text-sm italic">
+                                    <p>Мы, Фабрика Декора "Керамикъ", уже много лет специализируемся на ретро электрике. За годы существования из увлекшихся любителей с горящими глазами наша команда превратилась в настоящих с большой буквы Профессионалов своего дела.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <div class="bg-white p-6 rounded shadow-sm">
+                                <div class="flex mb-4">
+                                    <div class="w-10 h-10 rounded-full overflow-hidden mr-4">
+                                        <img src="/src/images/1.svg" alt="Мария Петрова" class="w-full h-full object-cover">
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-gray-800">Мария Петрова</div>
+                                        <div class="text-gray-500 text-sm">15.08.19</div>
+                                    </div>
+                                </div>
+                                <div class="text-gray-600 text-sm italic">
+                                    <p>Отличное качество продукции и сервис на высшем уровне. Очень довольна покупкой и рекомендую всем, кто ищет надежные ретро-механизмы для своего дома.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white p-6 rounded shadow-sm">
+                                <div class="flex mb-4">
+                                    <div class="w-10 h-10 rounded-full overflow-hidden mr-4">
+                                        <img src="/src/images/3.svg" alt="Apple Inc." class="w-full h-full object-cover">
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-gray-800">Apple Inc.</div>
+                                        <div class="text-gray-500 text-sm">22.09.19</div>
+                                    </div>
+                                </div>
+                                <div class="text-gray-600 text-sm italic">
+                                    <p>Сотрудничество с Фабрикой Декора "Керамикъ" оказалось очень продуктивным. Качество продукции соответствует нашим высоким стандартам.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white p-6 rounded shadow-sm">
+                                <div class="flex mb-4">
+                                    <div class="w-10 h-10 rounded-full overflow-hidden mr-4">
+                                        <img src="/src/images/sam.svg" alt="Дмитрий Козлов" class="w-full h-full object-cover">
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-gray-800">Дмитрий Козлов</div>
+                                        <div class="text-gray-500 text-sm">05.10.19</div>
+                                    </div>
+                                </div>
+                                <div class="text-gray-600 text-sm italic">
+                                    <p>Заказывал розетки и выключатели для своего загородного дома. Очень доволен качеством и внешним видом. Отдельное спасибо за оперативную доставку!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <div class="bg-white p-6 rounded shadow-sm">
+                                <div class="flex mb-4">
+                                    <div class="w-10 h-10 rounded-full overflow-hidden mr-4">
+                                        <img src="/src/images/1.svg" alt="Елена Смирнова" class="w-full h-full object-cover">
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-gray-800">Елена Смирнова</div>
+                                        <div class="text-gray-500 text-sm">12.11.19</div>
+                                    </div>
+                                </div>
+                                <div class="text-gray-600 text-sm italic">
+                                    <p>Прекрасный выбор ретро-электрики. Нашла именно то, что искала для своего интерьера в стиле лофт. Буду рекомендовать вас своим друзьям!</p>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white p-6 rounded shadow-sm">
+                                <div class="flex mb-4">
+                                    <div class="w-10 h-10 rounded-full overflow-hidden mr-4">
+                                        <img src="/src/images/3.svg" alt="Google LLC" class="w-full h-full object-cover">
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-gray-800">Google LLC</div>
+                                        <div class="text-gray-500 text-sm">20.12.19</div>
+                                    </div>
+                                </div>
+                                <div class="text-gray-600 text-sm italic">
+                                    <p>Оформили наш новый офис с использованием продукции Фабрики Декора "Керамикъ". Результат превзошел все ожидания. Спасибо за профессионализм!</p>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white p-6 rounded shadow-sm">
+                                <div class="flex mb-4">
+                                    <div class="w-10 h-10 rounded-full overflow-hidden mr-4">
+                                        <img src="/src/images/sam.svg" alt="Игорь Васильев" class="w-full h-full object-cover">
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-gray-800">Игорь Васильев</div>
+                                        <div class="text-gray-500 text-sm">15.01.20</div>
+                                    </div>
+                                </div>
+                                <div class="text-gray-600 text-sm italic">
+                                    <p>Как дизайнер интерьеров, я всегда ищу качественные и стильные решения для своих проектов. Фабрика Декора "Керамикъ" - это именно то, что нужно!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button id="prevTestimonialBtn" class="absolute left-5 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white w-10 h-10 rounded-full flex items-center justify-center z-10">
+                    &#10094;
+                </button>
+                <button id="nextTestimonialBtn" class="absolute right-5 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white w-10 h-10 rounded-full flex items-center justify-center z-10">
+                    &#10095;
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <div class="flex justify-center space-x-2 mb-8">
+        <span class="w-2 h-2 bg-amber-500 rounded-full testimonial-indicator" data-index="0"></span>
+        <span class="w-2 h-2 bg-gray-300 rounded-full testimonial-indicator" data-index="1"></span>
+        <span class="w-2 h-2 bg-gray-300 rounded-full testimonial-indicator" data-index="2"></span>
+    </div>
+    
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center items-center gap-[100px] ml-[55px] mr-[50px]">
+                <img src="/src/images/30.svg" alt="Partner 1" class="h-10 opacity-70 hover:opacity-100 transition-opacity">
+                <img src="/src/images/31.svg" alt="Partner 2" class="h-10 opacity-70 hover:opacity-100 transition-opacity">
+                <img src="/src/images/32.svg" alt="Partner 3" class="h-10 opacity-70 hover:opacity-100 transition-opacity">
+                <img src="/src/images/33.svg" alt="Partner 4" class="h-10 opacity-70 hover:opacity-100 transition-opacity">
+                <img src="/src/images/34.svg" alt="Partner 5" class="h-10 opacity-70 hover:opacity-100 transition-opacity">
+                <img src="/src/images/35.svg" alt="Partner 6" class="h-10 opacity-70 hover:opacity-100 transition-opacity">
+                <img src="/src/images/36.svg" alt="Partner 7" class="h-10 opacity-70 hover:opacity-100 transition-opacity">
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-12 bg-white ml-[85px]">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-6">SEO текст</h2>
+            <div class="max-w-3xl">
+                <p class="text-gray-600 text-sm mb-4">
+                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и веб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+                </p>
+                <p class="text-gray-600 text-sm mb-6">
+                    Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+                </p>
+                <a href="#" class="text-gray-800 font-bold inline-flex items-center">
+                    Больше <span class="ml-1">›</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="bg-gray-800 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4 ">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 ml-[85px] mr-[85px]">
+                <div>
+                    <h3 class="font-bold text-lg mb-4 uppercase">ПОДПИСАТЬСЯ</h3>
+                    <p class="text-gray-400 text-sm mb-4 leading-relaxed">
+                        Подпишитесь на наши новости и узнавайте первыми о самом интересном, что происходит в увлекательном мире ретро электрики.
+                    </p>
+                    <form class="flex">
+                        <input type="email" placeholder="Ваш E-mail адрес" class="bg-gray-700 text-white px-4 py-2 w-full text-sm">
+                        <button type="submit" class="bg-gray-600 hover:bg-gray-500 px-4 py-2 text-sm">Подписаться</button>
+                    </form>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-4 uppercase">ПОЛЕЗНАЯ ИНФОРМАЦИЯ</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white text-sm">Наши контакты</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white text-sm">Сотрудничество</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white text-sm">Монтаж</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white text-sm">Карта сайта</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-4 uppercase">КАК ПРИОБРЕСТИ</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white text-sm">Доставка</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white text-sm">Оплата</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white text-sm">Публичная оферта</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white text-sm">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-4 uppercase">ЛИЧНОЕ ПРОСТРАНСТВО</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white text-sm">Войти в кабинет</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white text-sm">История заказов</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white text-sm">Избранные товары</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white text-sm">Подписка на новости</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <div class="ml-[83px] text-gray-500 text-sm mb-4 md:mb-0">Copyright © 2019 | ОМ Керамикъ</div>
+                <img src="/src/images/111.svg" alt="Mango" class="h-[30px] mr-[93px]">
+            </div>
+        </div>
+    </footer>
+
+    <div id="callbackModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="text-2xl font-bold mb-4">Заказать обратный звонок</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 mb-2">Ваше имя</label>
+                    <input type="text" id="name" class="w-full px-3 py-2 border border-gray-300 rounded-md">
+                </div>
+                <div class="mb-4">
+                    <label for="phone" class="block text-gray-700 mb-2">Ваш телефон</label>
+                    <input type="tel" id="phone" class="w-full px-3 py-2 border border-gray-300 rounded-md">
+                </div>
+                <button type="submit" class="bg-amber-500 hover:bg-amber-400 text-white font-bold px-6 py-2 rounded-full">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="text-2xl font-bold mb-4">Корзина</h2>
+            <div class="mb-4">
+                <div class="flex justify-between items-center border-b pb-2 mb-2">
+                    <div>
+                        <p class="font-bold">Розетка Salvador</p>
+                        <p class="text-sm text-gray-600">2 шт. x 1200 руб.</p>
+                    </div>
+                    <p class="font-bold">2400 руб.</p>
+                </div>
+                <div class="flex justify-between items-center border-b pb-2 mb-2">
+                    <div>
+                        <p class="font-bold">Выключатель Ретро</p>
+                        <p class="text-sm text-gray-600">3 шт. x 950 руб.</p>
+                    </div>
+                    <p class="font-bold">2850 руб.</p>
+                </div>
+                <div class="flex justify-between items-center border-b pb-2 mb-2">
+                    <div>
+                        <p class="font-bold">Рамка деревянная</p>
+                        <p class="text-sm text-gray-600">5 шт. x 750 руб.</p>
+                    </div>
+                    <p class="font-bold">3750 руб.</p>
+                </div>
+            </div>
+            <div class="flex justify-between font-bold text-lg mb-4">
+                <p>Итого:</p>
+                <p>9000 руб.</p>
+            </div>
+            <div class="flex justify-between">
+                <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold px-4 py-2 rounded-full">Продолжить покупки</button>
+                <button class="bg-amber-500 hover:bg-amber-400 text-white font-bold px-6 py-2 rounded-full">Оформить заказ</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="wishlistModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="text-2xl font-bold mb-4">Избранные товары</h2>
+            <div class="mb-4">
+                <div class="flex justify-between items-center border-b pb-2 mb-2">
+                    <div>
+                        <p class="font-bold">Розетка Salvador черная</p>
+                        <p class="text-sm text-gray-600">1200 руб.</p>
+                    </div>
+                    <button class="text-amber-500 hover:text-amber-600">В корзину</button>
+                </div>
+                <div class="flex justify-between items-center border-b pb-2 mb-2">
+                    <div>
+                        <p class="font-bold">Выключатель Ретро медный</p>
+                        <p class="text-sm text-gray-600">950 руб.</p>
+                    </div>
+                    <button class="text-amber-500 hover:text-amber-600">В корзину</button>
+                </div>
+                <div class="flex justify-between items-center border-b pb-2 mb-2">
+                    <div>
+                        <p class="font-bold">Рамка деревянная темная</p>
+                        <p class="text-sm text-gray-600">750 руб.</p>
+                    </div>
+                    <button class="text-amber-500 hover:text-amber-600">В корзину</button>
+                </div>
+            </div>
+            <button class="bg-amber-500 hover:bg-amber-400 text-white font-bold px-6 py-2 rounded-full">Добавить все в корзину</button>
+        </div>
+    </div>
+
+    <div id="profileModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="text-2xl font-bold mb-4">Личный кабинет</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="login-email" class="block text-gray-700 mb-2">Email</label>
+                    <input type="email" id="login-email" class="w-full px-3 py-2 border border-gray-300 rounded-md">
+                </div>
+                <div class="mb-4">
+                    <label for="login-password" class="block text-gray-700 mb-2">Пароль</label>
+                    <input type="password" id="login-password" class="w-full px-3 py-2 border border-gray-300 rounded-md">
+                </div>
+                <div class="flex justify-between items-center mb-4">
+                    <label class="flex items-center">
+                        <input type="checkbox" class="mr-2">
+                        <span class="text-sm">Запомнить меня</span>
+                    </label>
+                    <a href="#" class="text-amber-500 text-sm">Забыли пароль?</a>
+                </div>
+                <button type="submit" class="bg-amber-500 hover:bg-amber-400 text-white font-bold px-6 py-2 rounded-full w-full mb-4">Войти</button>
+                <p class="text-center">Нет аккаунта? <a href="#" class="text-amber-500">Зарегистрироваться</a></p>
+            </form>
+        </div>
+    </div>
+
+    <div id="catalogModal" class="modal">
+        <div class="modal-content" style="width: 90%; max-width: 1000px;">
+            <span class="close">&times;</span>
+            <h2 class="text-2xl font-bold mb-4">Каталог товаров</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div>
+                    <h3 class="font-bold text-lg mb-2 text-amber-500">Розетки</h3>
+                    <ul class="space-y-1">
+                        <li><a href="#" class="text-gray-700 hover:text-amber-500">Розетки одинарные</a></li>
+                        <li><a href="#" class="text-gray-700 hover:text-amber-500">Розетки двойные</a></li>
+                        <li><a href="#" class="text-gray-700 hover:text-amber-500">Розетки с заземлением</a></li>
+                        <li><a href="#" class="text-gray-700 hover:text-amber-500">Розетки влагозащищенные</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-2 text-amber-500">Выключатели</h3>
+                    <ul class="space-y-1">
+                        <li><a href="#" class="text-gray-700 hover:text-amber-500">Выключатели одноклавишные</a></li>
+                        <li><a href="#" class="text-gray-700 hover:text-amber-500">Выключатели двухклавишные</a></li>
+                        <li><a href="#" class="text-gray-700 hover:text-amber-500">Выключатели проходные</a></li>
+                        <li><a href="#" class="text-gray-700 hover:text-amber-500">Выключатели с подсветкой</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-2 text-amber-500">Рамки</h3>
+                    <ul class="space-y-1">
+                        <li><a href="#" class="text-gray-700 hover:text-amber-500">Рамки деревянные</a></li>
+                        <li><a href="#" class="text-gray-700 hover:text-amber-500">Рамки металлические</a></li>
+                        <li><a href="#" class="text-gray-700 hover:text-amber-500">Рамки пластиковые</a></li>
+                        <li><a href="#" class="text-gray-700 hover:text-amber-500">Рамки стеклянные</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-2 text-amber-500">Аксессуары</h3>
+                    <ul class="space-y-1">
+                        <li><a href="#" class="text-gray-700 hover:text-amber-500">Изоляторы кабельные</a></li>
+                        <li><a href="#" class="text-gray-700 hover:text-amber-500">Коробки распаечные</a></li>
+                        <li><a href="#" class="text-gray-700 hover:text-amber-500">Провода</a></li>
+                        <li><a href="#" class="text-gray-700 hover:text-amber-500">Лампы</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="text-2xl font-bold mb-4">О нас</h2>
+            <p class="text-gray-700 mb-4">
+                Мы, Фабрика Декора "Керамикъ", уже много лет специализируемся на ретро электрике. 
+                За годы существования из увлекшихся любителей с горящими глазами наша команда 
+                превратилась в настоящих с большой буквы Профессионалов своего дела. Но искра 
+                в наших глазах совершенно не затухла! Сегодня, мы продолжаем работать над тем, 
+                чтоб вырастить и таких же Профессионалов новых членов нашей команды.
+            </p>
+            <p class="text-gray-700 mb-4">
+                Наша компания предлагает широкий ассортимент ретро-электрики высочайшего качества. 
+                Мы гордимся тем, что наши изделия не только функциональны, но и являются настоящим 
+                украшением интерьера. Каждый продукт создается с любовью к деталям и уважением к 
+                традициям ретро-стиля.
+            </p>
+            <p class="text-gray-700 mb-4">
+                Мы работаем как с частными клиентами, так и с дизайнерами интерьеров, архитекторами 
+                и строительными компаниями. Наша цель - предоставить вам лучшие решения для вашего 
+                дома или проекта.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
