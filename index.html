@@ -6,6 +6,69 @@
     <title>Ретро Электрика</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/src/style.css/style.css">
+    <style>
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+        }
+        
+        .carousel {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        
+        .carousel-slide {
+            min-width: 100%;
+            position: relative;
+        }
+        
+        .testimonial-carousel {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        
+        .testimonial-slide {
+            min-width: 100%;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 50;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+        
+        .modal-content {
+            background-color: #fefefe;
+            margin: 10% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 8px;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+        
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body class="font-sans text-gray-800 leading-normal bg-white mr-[15px]">
     <header class="bg-[#F8F8F8]">
@@ -93,38 +156,38 @@
     <section class="py-8 mr-[65px]">
         <div class="container mx-auto px-4 ml-[80px]">
             <div class="grid grid-cols-2 md:grid-cols-5 gap-4 mb-4">
-                <div class="bg-gray-100 w-[240px] h-[150px] text-center hover:shadow-md transition duration-300">
+                <div class="bg-gray-100 w-[240px] h-[150px] text-center hover:shadow-md transition duration-300 category-item" data-category="sockets">
                     <img src="/src/images/IMGP7632-copy-500x500.svg" alt="Розетки" class="absolute h-[150px] ml-[0px] mt-[0px] mx-auto mb-4">
                     <h3 class="font-bold mt-[60px] ml-[50px] text-[18px] uppercase">РОЗЕТКИ</h3>
                 </div>
-                <div class="bg-gray-100 p-5 ml-[40px] w-[240px] text-center hover:shadow-md transition duration-300">
+                <div class="bg-gray-100 p-5 ml-[40px] w-[240px] text-center hover:shadow-md transition duration-300 category-item" data-category="switches">
                     <img src="/src/images/34024а.png" alt="Выключатели" class="absolute h-[150px] ml-[-20px] mt-[-20px] mx-auto mb-4">
                     <h3 class="font-bold mt-[40px] ml-[60px] text-[18px] uppercase">ВЫКЛЮЧАТЕЛИ</h3>
                 </div>
-                <div class="bg-gray-100 p-5 ml-[80px] w-[240px] text-center hover:shadow-md transition duration-300">
+                <div class="bg-gray-100 p-5 ml-[80px] w-[240px] text-center hover:shadow-md transition duration-300 category-item" data-category="boxes">
                     <img src="/src/images/330-СК.png" alt="Коробки распаечные" class="absolute h-[130px] ml-[-20px] mt-[-10px] mx-auto mb-4">
                     <h3 class="font-bold text-[18px] uppercase mt-[30px] ml-[20px]">КОРОБКИ <br> <span class="ml-[37px]">РАСПАЕЧНЫЕ</span></h3>
                 </div>
-                <div class="bg-gray-100 p-5 ml-[115px] w-[240px]  text-center hover:shadow-md transition duration-300">
+                <div class="bg-gray-100 p-5 ml-[115px] w-[240px]  text-center hover:shadow-md transition duration-300 category-item" data-category="insulators">
                     <img src="/src/images/IMGP7888-copy-500x500.png" alt="Изоляторы кабельные" class="absolute h-[130px] ml-[-20px] mt-[-10px] mx-auto mb-4">
                     <h3 class="font-bold text-[18px] mt-[30px] uppercase">ИЗОЛЯТОРЫ КАБЕЛЬНЫЕ</h3>
                 </div>
             </div>
             
             <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
-                <div class="bg-gray-100 p-5 w-[240px] text-center hover:shadow-md transition duration-300">
+                <div class="bg-gray-100 p-5 w-[240px] text-center hover:shadow-md transition duration-300 category-item" data-category="frames">
                     <img src="/src/images/IMGP2404-copy.png" alt="Рамки" class="absolute h-[120px] ml-[-20px] mt-[0px] mx-auto mb-4">
                     <h3 class="font-bold mt-[40px] ml-[50px] text-[18px] uppercase">РАМКИ</h3>
                 </div>
-                <div class="bg-gray-100 p-5 ml-[40px] w-[240px] text-center hover:shadow-md transition duration-300">
+                <div class="bg-gray-100 p-5 ml-[40px] w-[240px] text-center hover:shadow-md transition duration-300 category-item" data-category="wires">
                     <img src="/src/images/проводда.png" alt="Провода" class="absolute h-[120px] ml-[-20px] mt-[-7px] mx-auto mb-4">
                     <h3 class="font-bold mt-[40px] ml-[60px] text-[18px] uppercase">ПРОВОДА</h3>
                 </div>
-                <div class="bg-gray-100 p-5 ml-[80px] w-[240px] text-center hover:shadow-md transition duration-300">
+                <div class="bg-gray-100 p-5 ml-[80px] w-[240px] text-center hover:shadow-md transition duration-300 category-item" data-category="accessories">
                     <img src="/src/images/аксессуары.png" alt="Аксессуары" class="absolute h-[80px] ml-[-20px] mt-[-px] mx-auto mb-4">
                     <h3 class="font-bold mt-[40px] ml-[60px] text-[18px] uppercase">АКСЕССУАРЫ</h3>
                 </div>
-                <div class="bg-gray-100 p-5 ml-[115px] w-[240px] text-center hover:shadow-md transition duration-300">
+                <div class="bg-gray-100 p-5 ml-[115px] w-[240px] text-center hover:shadow-md transition duration-300 category-item" data-category="lamps">
                     <img src="/src/images/A60F2C-500x500.png" alt="Лампы" class="w-20 ml-[-20px] h-20 mx-auto mb-4">
                     <h3 class="font-bold text-sm uppercase">ЛАМПЫ</h3>
                 </div>
@@ -264,6 +327,7 @@
                 
                 <div class="text-center relative z-10">
                     <div class="text-amber-500 mb-4 text-4xl bg-gray-50 inline-block p-2 rounded-full"><img src="src/images/26.svg" alt="21"></div>
+                    <h3 class="font-bold text-sm">Вы звоните нам</h3  alt="21"></div>
                     <h3 class="font-bold text-sm">Вы звоните нам</h3>
                     <img class="absolute mt-[-40px] ml-[250px]" src="src/images/Vector 2.3.svg" alt="v">
                 </div>
@@ -716,6 +780,15 @@
                 и строительными компаниями. Наша цель - предоставить вам лучшие решения для вашего 
                 дома или проекта.
             </p>
+        </div>
+    </div>
+
+    <div id="categoryModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="text-2xl font-bold mb-4" id="categoryTitle">Категория</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="categoryProducts">
+            </div>
         </div>
     </div>
 </body>
